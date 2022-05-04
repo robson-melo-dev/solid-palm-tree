@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 100vh;
+}
+
+
+  @keyframes glowing-breath{ 
+
+    from {
+        box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(91 52 234), 0 0 40px rgb(91 52 234), 0 0 50px rgb(91 52 234), 0 0 60px rgb(91 52 234), 0 0 70px rgb(91 52 234);
+        
+      }
+      to {
+        
+        box-shadow: 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(153, 132, 226), 0 0 40px rgb(153, 132, 226), 0 0 50px rgb(153, 132, 226), 0 0 60px rgb(153, 132, 226), 0 0 70px rgb(153, 132, 226) 0 0 80px rgb(153, 132, 226);
+        transform: scale(1.1); Pulsate the 
+      }
+  }
+
+  
+ 
+  .logo img{
+      width: 150px;
+      height: 150px;
+      animation: glowing-breath 3s linear infinite alternate;
+      border-radius: 50%;
+  }
